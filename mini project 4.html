@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mini project 4 ,forms</title>
+<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css 
+
+">
+ 
+	<style type="text/css">
+		body{
+			background-color: #3aaf9f;
+			font-family: sans-serif;
+		}
+		h1{
+			margin: auto;
+			text-align: center;
+			margin-top: 0;
+			margin-bottom: 20px;
+			color:#3aaf9f;
+		}
+		.wrapper{
+			max-width: 450px;
+			height: auto;
+			background-color: white;
+            padding: 60px 45px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top:50%;
+            left: 50%;
+            border-radius: 20px;
+
+		}
+		.input_field{
+			position: relative;
+			 margin-bottom: 10px;
+
+
+
+		}
+		.input{
+			width: 90%;
+			padding:12px;
+			padding-left: 35px;
+			border: none;
+			background-color: #eeeeee;
+		} 
+		.input_field i{
+			position: absolute;
+			top: 10px;
+			left:10px;
+			color:#eb4034; 
+		} 
+		.btn{
+			width: 50%;
+			margin:50px 65px 10px;
+			background-color:#3aaf9f;
+			text-align: center;
+			padding: 12px;
+			border-radius: 25px;
+			color: white;
+			text-decoration: underline; 
+		} 
+		::placeholder{
+			color: black;
+		}
+		.social_media{
+			display: flex;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+		.item{
+			margin: 0 5px;
+			width: 35px;
+			height: 35px;
+			text-align: center;
+			border: 2px solid #eeeeee;
+			border-radius: 50%;
+			color: #eeeeee;
+			line-height: 33px;
+			transition:all 0.5s ease;
+		}
+		.item:hover{
+			border: 2px solid #3aaf9f;
+			color: #3aaf9f;
+		}
+
+
+	</style>
+</head>
+<body>
+<div class="wrapper">
+<form action="https://www.youtube.com/" target="_blank" method="post">
+	 <h1>Register Here</h1>
+	 <div class="social_media">
+	 	<div class="item">
+	 		<a href=""> <i class="fab fa-facebook"></i> </a>
+	 		
+	 	</div>
+	 	<div class="item">
+	 		<a href=""> <i class="fab fa-instagram"></i>  
+            </a>
+	 		
+	 	</div>
+	 	<div class="item">
+	 		<a href=""> <i class="fab fa-twitter"></i> 
+	 		</a>
+	 		
+	 	</div>
+	 	
+	 </div>
+    <div class="input_field">
+	  <i class="fas fa-user"></i>
+	 <input type="text" name="name" placeholder="name" required class="input">
+	 </div>
+
+	 <div class="input_field">
+	 	<i class="fas fa-envelope-square"></i>
+	 	<input type="email" name="email" placeholder="email" required class="input">
+	 </div>
+	 <div class="input_field">
+	 	<i class="fas fa-lock"></i>
+	 	<input type="password" name="pw" placeholder="password" required class="input" required title="the password should be between 5-10" pattern=".{5,10}">
+	 </div>
+	 <br>
+	 <i class="fas fa-calendar-week"></i>
+	 <label>DOB:</label>
+<div>
+<select style="border-radius: 20px">
+<option>date</option>
+ <option>o1</option>
+  <option>02</option>
+  <option>03</option>
+  <option>04</option>
+</select>
+<select style="border-radius: 20px">
+ 
+	<option>month</option>
+	<option>jan</option>
+	<option>feb</option>
+	<option>march</option>
+</select>
+<select style="border-radius: 20px">
+ 
+	<option>year</option>
+	<option>2001</option>
+	<option>2002</option>
+	<option>2003</option>
+</select>
+ </div> 
+ <div>
+ 	<br>
+
+ 	<i class="fas fa-mars"></i>
+ 	<label>male</label>
+ 	<input type="radio" name="gender">
+ 	<i class="fas fa-venus"></i>
+ 	<label>female</label>
+ 	<input type="radio" name="gender">
+ 	  </div>
+ <div>
+ 	<br>
+ 	<label>I agree to the terms and conditions</label>
+ 	<input type="checkbox" name="tick">
+ </div>
+ <button class="btn">Subscribe</button>
+</form>
+</div>
+</body>
+</html>
